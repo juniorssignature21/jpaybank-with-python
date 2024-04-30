@@ -147,7 +147,7 @@ class AfrikMoney:
          if withdraw_amount <= AfrikMoney.acct_balance:
               AfrikMoney.acct_balance = AfrikMoney.acct_balance - withdraw_amount
               print(f'✅**********\nTransaction Sucessful!')
-              self.get_balance()
+              self.get_balance(self)
 
          else:
               print(f'❌ **********\nInsufficient funds!')

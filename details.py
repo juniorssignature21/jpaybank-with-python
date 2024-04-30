@@ -10,7 +10,7 @@ class Jpay_details:
           AfrikMoney.user_option(self=AfrikMoney)
      elif details == "2":
           AfrikMoney.login(self=AfrikMoney)
-          AfrikMoney.user_option()
+          AfrikMoney.user_option(self=AfrikMoney)
 
               
          
