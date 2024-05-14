@@ -159,7 +159,7 @@ class AfrikMoney:
          if self.acct_balance >= trans:
               AfrikMoney.acct_balance = AfrikMoney.acct_balance - trans
               print(f"Transaction Successful\n**********\nYou have successfully tranfered ${trans} to ")
-              self.get_balance()
+              self.get_balance(self)
 
          else:
               print(f"❌**********\nTransaction Unsuccessful\n**********\nInsufficient funds\nYour balance is {AfrikMoney.acct_balance}") 

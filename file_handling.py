@@ -22,3 +22,8 @@ with os.scandir('C:/Users') as entries:
 with open(file_name2, 'a') as a:
     text_content = 'Welcome to Learn factory'
     a.write(text_content)
+
+if os.path.exists(file_name2):
+    os.remove(file_name2)
+else:
+    print("Path does not exist")
